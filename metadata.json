@@ -1,0 +1,6 @@
+{
+  "name": "StoryVerse AI",
+  "description": "Every bedtime becomes a new adventure. Interactive AI-powered children's storybook platform with page-by-page illustrations, natural narration, and child-safe learning.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

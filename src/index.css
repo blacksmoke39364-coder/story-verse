@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .dot-pattern-bg {
+    background-image: radial-gradient(#0066CC 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+
+  .dot-pattern-dark {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+
+  .pop-transition {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .btn-3d-yellow {
+    background-color: #FFD700;
+    color: #1e293b;
+    box-shadow: 0 12px 0 0 #e6c200;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .btn-3d-yellow:hover {
+    filter: brightness(1.04);
+  }
+  .btn-3d-yellow:active {
+    transform: translateY(6px);
+    box-shadow: 0 4px 0 0 #e6c200;
+  }
+
+  .btn-3d-blue {
+    background-color: #0066CC;
+    color: #ffffff;
+    box-shadow: 0 12px 0 0 #004c99;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .btn-3d-blue:hover {
+    filter: brightness(1.06);
+  }
+  .btn-3d-blue:active {
+    transform: translateY(6px);
+    box-shadow: 0 4px 0 0 #004c99;
+  }
+
+  .btn-3d-coral {
+    background-color: #FF6B6B;
+    color: #ffffff;
+    box-shadow: 0 12px 0 0 #e05353;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .btn-3d-coral:active {
+    transform: translateY(6px);
+    box-shadow: 0 4px 0 0 #e05353;
+  }
+
+  .btn-3d-teal {
+    background-color: #4ECDC4;
+    color: #0f172a;
+    box-shadow: 0 12px 0 0 #3aa8a0;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .btn-3d-teal:active {
+    transform: translateY(6px);
+    box-shadow: 0 4px 0 0 #3aa8a0;
+  }
+
+  .bouncy-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .bouncy-card:hover {
+    transform: scale(1.04) rotate(1deg);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+
+  .floating-badge {
+    animation: floatVertical 6s ease-in-out infinite;
+  }
+
+  .floating-blob-slow {
+    animation: floatBlob 7s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes floatVertical {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(25px, -20px) scale(1.08);
+  }
+  100% {
+    transform: translate(-15px, 15px) scale(0.95);
+  }
+}
